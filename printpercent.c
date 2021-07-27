@@ -1,5 +1,5 @@
 #include "holberton.h"
-​
+
 /**
  * printpercent - prints %
  * @format: format

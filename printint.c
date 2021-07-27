@@ -11,7 +11,7 @@ int _abs(int number)
 	else
 		return (number);
 }
-​
+
 /**
  * contadordigit - counts the digits.
  * @number: input integer
@@ -21,10 +21,10 @@ int contadordigit(int number)
 {
 	int count = 0;
 	int number2 = number;
-​
+
 	if (number <= 0)
 		count += 1;
-​
+
 	while (_abs(number2) != 0)
 	{
 		number2 = number2 / 10;
@@ -41,7 +41,7 @@ int integer(int number)
 {
 	unsigned int unint;
 	int count;
-​
+
 	count = contadordigit(number);
 if (number < 0)
 {
@@ -50,14 +50,14 @@ unint = -number;
 }
 	else
 		unint = number;
-​
+
 	if (unint >= 10)
 		integer(unint / 10);
 	_putchar(unint % 10 + '0');
-​
+
 	return (count);
 }
-​
+
 /**
  * printint - prints a number
  * @format: format to print number
@@ -69,8 +69,8 @@ int printint(char *format, va_list pa)
 	int number = va_arg(pa, int);
 	int numero;
 	(void)format;
-​
+
 	numero = integer(number);
-​
+
 	return (numero);
 }

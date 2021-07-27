@@ -11,9 +11,9 @@ int printhex(char *format, va_list pa)
 	unsigned int num2;
 	int i, i2, copy, contame = 0;
 	char *numhex;
-​
+
 	(void)format;
-​
+
 	if (num == 0)
 		return (_putchar('0'));
 	for (num2 = num; num2 != 0; contame++)
@@ -47,9 +47,9 @@ int printHEX(char *format, va_list pa)
 	unsigned int NUM2;
 	int I, I2, COPY, CONTAME = 0;
 	char *NUMHEX;
-​
+
 	(void)format;
-​
+
 	if (NUM == 0)
 		return (_putchar('0'));
 	for (NUM2 = NUM; NUM2 != 0; CONTAME++)
